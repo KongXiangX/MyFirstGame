@@ -8,25 +8,41 @@
 
 #import "GameViewController.h"
 #import "GameScene.h"
+#import "MyScene.h"
+#import <SpriteKit/SKAudioNode.h>
 
 @implementation GameViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // Load the SKScene from 'GameScene.sks'
-    GameScene *scene = (GameScene *)[SKScene nodeWithFileNamed:@"GameScene"];
+//    // Load the SKScene from 'GameScene.sks'
+//    GameScene *scene = (GameScene *)[SKScene nodeWithFileNamed:@"GameScene"];
+//
+//    // Set the scale mode to scale to fit the window
+//    scene.scaleMode = SKSceneScaleModeAspectFill;
+//
+//    SKView *skView = (SKView *)self.view;
+//
+//    // Present the scene
+//    [skView presentScene:scene];
+//
+//    skView.showsFPS = YES;
+//    skView.showsNodeCount = YES;
     
-    // Set the scale mode to scale to fit the window
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    SKView * view = (SKView *)self.view;
+    view.showsNodeCount = YES;
+    view.showsFPS = YES;
+    view.showsDrawCount = YES;
     
-    SKView *skView = (SKView *)self.view;
     
-    // Present the scene
-    [skView presentScene:scene];
+    MyScene * scene = [MyScene sceneWithSize:view.bounds.size];
+    scene.scaleMode = SKSceneScaleModeFill;
+    [view presentScene:scene];
     
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
+    
+    
 }
 
 - (BOOL)shouldAutorotate {

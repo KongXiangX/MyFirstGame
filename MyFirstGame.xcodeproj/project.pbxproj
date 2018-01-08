@@ -18,6 +18,11 @@
 		182C1CBF20006D10001FCDD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C1CBE20006D10001FCDD3 /* main.m */; };
 		182C1CC920006D10001FCDD3 /* MyFirstGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C1CC820006D10001FCDD3 /* MyFirstGameTests.m */; };
 		182C1CD420006D11001FCDD3 /* MyFirstGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C1CD320006D11001FCDD3 /* MyFirstGameUITests.m */; };
+		182C1CE2200072AE001FCDD3 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C1CE1200072AE001FCDD3 /* Spaceship.png */; };
+		182C1CE62000776F001FCDD3 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 182C1CE42000776F001FCDD3 /* background-music-aac.caf */; };
+		182C1CE72000776F001FCDD3 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 182C1CE52000776F001FCDD3 /* pew-pew-lei.caf */; };
+		182C1CEA200077AB001FCDD3 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C1CE9200077AB001FCDD3 /* MyScene.m */; };
+		182C1CED200077E3001FCDD3 /* ResultScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C1CEC200077E3001FCDD3 /* ResultScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,13 @@
 		182C1CCF20006D11001FCDD3 /* MyFirstGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182C1CD320006D11001FCDD3 /* MyFirstGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFirstGameUITests.m; sourceTree = "<group>"; };
 		182C1CD520006D11001FCDD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182C1CE1200072AE001FCDD3 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		182C1CE42000776F001FCDD3 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		182C1CE52000776F001FCDD3 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		182C1CE8200077AB001FCDD3 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		182C1CE9200077AB001FCDD3 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		182C1CEB200077E3001FCDD3 /* ResultScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultScene.h; sourceTree = "<group>"; };
+		182C1CEC200077E3001FCDD3 /* ResultScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResultScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,13 +126,19 @@
 				182C1CAD20006D10001FCDD3 /* Actions.sks */,
 				182C1CAF20006D10001FCDD3 /* GameScene.h */,
 				182C1CB020006D10001FCDD3 /* GameScene.m */,
+				182C1CE8200077AB001FCDD3 /* MyScene.h */,
+				182C1CE9200077AB001FCDD3 /* MyScene.m */,
+				182C1CEB200077E3001FCDD3 /* ResultScene.h */,
+				182C1CEC200077E3001FCDD3 /* ResultScene.m */,
 				182C1CB220006D10001FCDD3 /* GameViewController.h */,
 				182C1CB320006D10001FCDD3 /* GameViewController.m */,
+				182C1CE1200072AE001FCDD3 /* Spaceship.png */,
 				182C1CB520006D10001FCDD3 /* Main.storyboard */,
 				182C1CB820006D10001FCDD3 /* Assets.xcassets */,
 				182C1CBA20006D10001FCDD3 /* LaunchScreen.storyboard */,
 				182C1CBD20006D10001FCDD3 /* Info.plist */,
 				182C1CBE20006D10001FCDD3 /* main.m */,
+				182C1CE32000776F001FCDD3 /* Sounds */,
 			);
 			path = MyFirstGame;
 			sourceTree = "<group>";
@@ -141,6 +159,15 @@
 				182C1CD520006D11001FCDD3 /* Info.plist */,
 			);
 			path = MyFirstGameUITests;
+			sourceTree = "<group>";
+		};
+		182C1CE32000776F001FCDD3 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				182C1CE42000776F001FCDD3 /* background-music-aac.caf */,
+				182C1CE52000776F001FCDD3 /* pew-pew-lei.caf */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +277,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				182C1CB720006D10001FCDD3 /* Main.storyboard in Resources */,
+				182C1CE62000776F001FCDD3 /* background-music-aac.caf in Resources */,
 				182C1CAC20006D10001FCDD3 /* GameScene.sks in Resources */,
+				182C1CE72000776F001FCDD3 /* pew-pew-lei.caf in Resources */,
 				182C1CB920006D10001FCDD3 /* Assets.xcassets in Resources */,
 				182C1CBC20006D10001FCDD3 /* LaunchScreen.storyboard in Resources */,
+				182C1CE2200072AE001FCDD3 /* Spaceship.png in Resources */,
 				182C1CAE20006D10001FCDD3 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				182C1CB120006D10001FCDD3 /* GameScene.m in Sources */,
+				182C1CEA200077AB001FCDD3 /* MyScene.m in Sources */,
 				182C1CB420006D10001FCDD3 /* GameViewController.m in Sources */,
+				182C1CED200077E3001FCDD3 /* ResultScene.m in Sources */,
 				182C1CBF20006D10001FCDD3 /* main.m in Sources */,
 				182C1CAA20006D10001FCDD3 /* AppDelegate.m in Sources */,
 			);
